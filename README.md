@@ -1,6 +1,6 @@
 BLOK Amsterdam — Streetwear Webshop
 
-Live site: blok-amsterdam.netlify.app
+Live site: https://6a0a187d27b6d95cafedb5a1--euphonious-licorice-8f7920.netlify.app/
 
 A dark, urban streetwear landing page and webshop for a fictional Amsterdam-based clothing brand. Built as a portfolio project to demonstrate advanced frontend skills including cart functionality and dynamic product filtering.
 
