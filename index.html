@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLOK — Streetwear Amsterdam</title>
+  <meta name="description" content="BLOK — Premium streetwear from Amsterdam. Limited drops, raw aesthetics, no fakes." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <div class="nav__logo">BLOK<span>®</span></div>
+      <nav class="nav__links">
+        <a href="#drops">Drops</a>
+        <a href="#collection">Collection</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="nav__icon" aria-label="Zoeken">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="nav__icon nav__cart" id="cartBtn" aria-label="Winkelwagen">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="nav__cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#drops">Drops</a>
+      <a href="#collection">Collection</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker__inner">
+      <span>FREE SHIPPING ABOVE €80</span>
+      <span class="ticker__dot">●</span>
+      <span>NEW DROP EVERY FRIDAY</span>
+      <span class="ticker__dot">●</span>
+      <span>LIMITED QUANTITIES</span>
+      <span class="ticker__dot">●</span>
+      <span>AMSTERDAM BASED</span>
+      <span class="ticker__dot">●</span>
+      <span>FREE SHIPPING ABOVE €80</span>
+      <span class="ticker__dot">●</span>
+      <span>NEW DROP EVERY FRIDAY</span>
+      <span class="ticker__dot">●</span>
+      <span>LIMITED QUANTITIES</span>
+      <span class="ticker__dot">●</span>
+      <span>AMSTERDAM BASED</span>
+      <span class="ticker__dot">●</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__left">
+      <div class="hero__tag">— AW25 COLLECTION</div>
+      <h1 class="hero__title">DRESS<br>THE<br><em>BLOCK</em></h1>
+      <p class="hero__sub">Raw Amsterdam energy. Limited drops. No restock, no excuses.</p>
+      <div class="hero__cta">
+        <a href="#drops" class="btn btn--primary">Shop New Drop</a>
+        <a href="#collection" class="btn btn--ghost">View All</a>
+      </div>
+    </div>
+    <div class="hero__right">
+      <div class="hero__product-card">
+        <div class="hero__product-img">
+          <div class="hero__product-placeholder">
+            <span>👕</span>
+            <p>BLOK HEAVY TEE</p>
+          </div>
+          <div class="hero__product-badge">NEW</div>
+        </div>
+        <div class="hero__product-info">
+          <span>BLOK Heavy Oversized Tee — Washed Black</span>
+          <strong>€ 54,95</strong>
+        </div>
+      </div>
+      <div class="hero__side-cards">
+        <div class="hero__side-card">
+          <span>🧢</span>
+          <div>
+            <p>6-Panel Cap</p>
+            <strong>€ 34,95</strong>
+          </div>
+        </div>
+        <div class="hero__side-card">
+          <span>🧥</span>
+          <div>
+            <p>Coach Jacket</p>
+            <strong>€ 89,95</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DROPS -->
+  <section class="drops" id="drops">
+    <div class="container">
+      <div class="drops__header">
+        <div>
+          <p class="section-label">Weekly release</p>
+          <h2>Friday Drop 🔥</h2>
+        </div>
+        <div class="drops__countdown" id="countdown">
+          <div class="countdown__item"><span id="cdHours">00</span><small>HRS</small></div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__item"><span id="cdMins">00</span><small>MIN</small></div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__item"><span id="cdSecs">00</span><small>SEC</small></div>
+        </div>
+      </div>
+      <div class="products__grid" id="productsGrid">
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section class="collection" id="collection">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">AW25</p>
+        <h2>Full Collection</h2>
+      </div>
+      <div class="collection__filters" id="filters">
+        <button class="filter__btn active" data-filter="all">All</button>
+        <button class="filter__btn" data-filter="tees">Tees</button>
+        <button class="filter__btn" data-filter="hoodies">Hoodies</button>
+        <button class="filter__btn" data-filter="bottoms">Bottoms</button>
+        <button class="filter__btn" data-filter="accessories">Accessories</button>
+      </div>
+      <div class="products__grid" id="collectionGrid"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__text">
+        <p class="section-label section-label--light">The brand</p>
+        <h2>Born on the<br><em>Amsterdam streets</em></h2>
+        <p>BLOK started in 2020 from a bedroom in Amsterdam-Noord. No investors, no hype machine — just raw product and a community that gets it.</p>
+        <p>Every piece is designed to last. Heavy fabrics, clean cuts, limited runs. We don't restock. When it's gone, it's gone.</p>
+        <div class="about__stats">
+          <div class="about__stat"><strong>50K+</strong><span>Community</span></div>
+          <div class="about__stat"><strong>100%</strong><span>Independent</span></div>
+          <div class="about__stat"><strong>AMS</strong><span>Based</span></div>
+        </div>
+      </div>
+      <div class="about__grid">
+        <div class="about__img about__img--1"><span>🏙️</span><p>Amsterdam-Noord</p></div>
+        <div class="about__img about__img--2"><span>✂️</span><p>Cut & Sew</p></div>
+        <div class="about__img about__img--3"><span>📦</span><p>Limited Drops</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container newsletter__inner">
+      <div>
+        <h2>Get early access.</h2>
+        <p>Drop notifications, exclusive discounts, no spam.</p>
+      </div>
+      <form class="newsletter__form" id="newsletterForm">
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart" id="cart">
+    <div class="cart__header">
+      <h3>Your Cart</h3>
+      <button class="cart__close" id="cartClose">✕</button>
+    </div>
+    <div class="cart__items" id="cartItems">
+      <div class="cart__empty">Your cart is empty.</div>
+    </div>
+    <div class="cart__footer" id="cartFooter" style="display:none">
+      <div class="cart__total">
+        <span>Total</span>
+        <strong id="cartTotal">€ 0,00</strong>
+      </div>
+      <button class="btn btn--primary btn--full">Checkout →</button>
+      <p class="cart__note">Free shipping above € 80</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">BLOK<span>®</span></div>
+        <p>Amsterdam streetwear.<br>Limited drops. No restock.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <a href="#drops">New Drop</a>
+        <a href="#collection">Collection</a>
+        <a href="#">Lookbook</a>
+        <a href="#">Sale</a>
+      </div>
+      <div class="footer__col">
+        <h4>Info</h4>
+        <a href="#about">About</a>
+        <a href="#">Sizing Guide</a>
+        <a href="#">Shipping & Returns</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 BLOK Amsterdam · KVK 99887766 · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
